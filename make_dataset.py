@@ -34,7 +34,7 @@ def tale_iterator( et, verbose = False ):
 
 if __name__ == '__main__':
     print('Creating data folder structure')
-    os.mkdir('data')
+    os.mkdir('data/')
     os.mkdir('data/external')
     os.mkdir('data/interim')
     os.mkdir('data/processed')

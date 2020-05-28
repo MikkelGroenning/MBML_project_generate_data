@@ -168,13 +168,13 @@ def get_stop_words():
     except FileNotFoundError:
 
         print("Downloading stopwords from Github")
-        url = "https://gist.githubusercontent.com/berteltorp/0cf8a0c7afea7f25ed754f24cfc2467b/raw/305d8e3930cc419e909d49d4b489c9773f75b2d6/stopord.txt"
+        url = "https://raw.githubusercontent.com/MikkelGroenning/MBML_project_generate_data/master/stopord.txt"
         r = requests.get(url)
         with open(path, "wb") as f:
             f.write(r.content)
         stopwords = read_txt_file(path)
 
-    # Adding stemmed stopwords (fix from error message, sue me)
+    # Adding stemmed stopwords (fix from error message)
     stopwords += ["bl", "ca", "eks", "pga"]
 
     return stopwords
