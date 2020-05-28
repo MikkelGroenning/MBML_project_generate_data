@@ -27,7 +27,7 @@ This will generate
 
 
 After running the command the folder structure should look like the following:
-
+<pre><code>
 ├── README.md       
 ├── data
 │   ├── external       <- Intermediate data that has been transformed. (contains the stop words)
@@ -35,5 +35,11 @@ After running the command the folder structure should look like the following:
 │   ├── processed      <- Intermediate data that has been transformed. ( vocabulary, X, X_tfidf, corpus, corpus_tfidf)
 │   └── raw            <- The original, immutable data dump. (contain the raw unzipped xml files)
 │
-├── build_features
-├── make_dataset
+├── scr
+│   ├── build_features
+│   ├── make_dataset
+│
+├── setup.py
+├── Enviroment.yml
+├── stop
+</code></pre>
