@@ -8,14 +8,14 @@ conda env create -f environment.yml
 conda env update
 </code></pre>
 
-2. Download and make the data set (the file can be found in src/data folder)
+2. Download and make the data set
 <pre><code>
-python make_dataset
+python3 src/data/make_dataset.py
 </code></pre>
 
-3. Preprocess the data set (the file can be found in src/features folder)
+3. Preprocess the data set
 <pre><code>
-python build_features
+python3 src/features/build_features.py
 </code></pre>
 
 This will generate
@@ -37,10 +37,10 @@ After running the command the folder structure should look like the following:
 │
 ├── scr
 │   ├── data 
-│   │    ├──build_features
+│   │    ├── make_dataset
 │   │
 │   ├── features
-│   │    ├── make_dataset
+│   │    ├── build_features 
 │
 ├── Notebook
 │   ├── project.ipynb
