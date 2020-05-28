@@ -10,12 +10,12 @@ conda env update
 
 2. Download and make the data set
 <pre><code>
-python make_dataset
+python make_dataset.py
 </code></pre>
 
 3. Preprocess the data set
 <pre><code>
-python build_features
+python build_features.py
 </code></pre>
 
 This will generate
