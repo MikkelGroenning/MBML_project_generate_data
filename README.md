@@ -8,12 +8,12 @@ conda env create -f environment.yml
 conda env update
 </code></pre>
 
-2. Download and make the data set
+2. Download and make the data set (the file can be found in src folder)
 <pre><code>
 python make_dataset
 </code></pre>
 
-3. Preprocess the data set
+3. Preprocess the data set (the file can be found in src folder)
 <pre><code>
 python build_features
 </code></pre>
