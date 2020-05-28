@@ -2,18 +2,21 @@
 This Github Repo contains two python scripts used to download, make, and preprocess the The Danish Parliament Corpus 2009 - 2017 dataset.
 Use the following command in the following order.
 
-1. Build environment
+1. Select folder
+Navigate to desired project folder
+
+2. Build environment
 <pre><code>
 conda env create -f environment.yml
 conda env update
 </code></pre>
 
-2. Download and make the data set
+3. Download and make the data set
 <pre><code>
 python make_dataset.py
 </code></pre>
 
-3. Preprocess the data set
+4. Preprocess the data set
 <pre><code>
 python build_features.py
 </code></pre>
@@ -35,6 +38,9 @@ After running the command the folder structure should look like the following:
 │   ├── processed      <- Intermediate data that has been transformed. ( vocabulary, X, X_tfidf, corpus, corpus_tfidf)
 │   └── raw            <- The original, immutable data dump. (contain the raw unzipped xml files)
 │
-├── build_features
-├── make_dataset
+├── build_features.py
+├── make_dataset.py
+├── stop_ord.txt
+├── enviroment.yml
+
 </code></pre>
