@@ -16,9 +16,9 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 
 sys.path.append(str(Path(__file__).parent.resolve() / ".."))
-from data.make_dataset import df as interim_df
+from src.data.make_dataset import df as interim_df
 
-processed_path = Path(__file__).parent.resolve() / "data" / "processed"
+processed_path = Path(__file__).parent.resolve() / ".." / ".." / "data" / "processed"
 
 # From https://stackoverflow.com/questions/36182502/add-stemming-support-to-countvectorizer-sklearn
 danish_stemmer = nltk.stem.SnowballStemmer("danish")
@@ -161,6 +161,8 @@ def get_stop_words():
 
     path = (
         Path(__file__).parent.resolve()
+        / ".."
+        / ".."
         / "data"
         / "external"
         / "stopord.txt"

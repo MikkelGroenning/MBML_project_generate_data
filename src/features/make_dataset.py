@@ -6,7 +6,7 @@ from pathlib import Path
 import requests, zipfile, io, os, zipfile
 
 
-data_path = Path(__file__).parent / "data/interim/data.pickle"
+data_path = Path(__file__).parent / "../../data/interim/data.pickle"
 
 def tale_iterator( et, verbose = False ):
     current_agenda_id = None
@@ -34,11 +34,11 @@ def tale_iterator( et, verbose = False ):
 
 if __name__ == '__main__':
     print('Creating data folder structure')
-    os.mkdir('data/')
-    os.mkdir('data/external')
-    os.mkdir('data/interim')
-    os.mkdir('data/processed')
-    os.mkdir('data/raw')
+    os.mkdir( Path(__file__).parent / "../../data/" )
+    os.mkdir(Path(__file__).parent / "../../data/external")
+    os.mkdir(Path(__file__).parent / "../../data/interim")
+    os.mkdir(Path(__file__).parent / "../../data/processed")
+    os.mkdir(Path(__file__).parent / "../../data/raw")
 
     print('Downloading zip online... ', end=' ')
     zip_file_url = "https://repository.clarin.dk/repository/xmlui/bitstream/handle/20.500.12115/8/FT-data-DSpace.zip?sequence=1&isAllowed=y"
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     print('unzipping downloaded data ... ', end=' ')
     for file in os.listdir('FT-data-DSpace/'):
         with zipfile.ZipFile('FT-data-DSpace/' + file, 'r') as zip_ref:
-            zip_ref.extractall('data/raw/')
+            zip_ref.extractall(Path(__file__).parent / "../../data/raw")
 
     for file in os.listdir('FT-data-DSpace/'):
         os.remove('FT-data-DSpace/' + file)
