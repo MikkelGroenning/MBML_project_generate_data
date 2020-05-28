@@ -27,7 +27,7 @@ This will generate
 
 
 After running the command the folder structure should look like the following:
-
+<pre><code>
 ├── README.md       
 ├── data
 │   ├── external       <- Intermediate data that has been transformed. (contains the stop words)
@@ -37,3 +37,4 @@ After running the command the folder structure should look like the following:
 │
 ├── build_features
 ├── make_dataset
+</code></pre>
