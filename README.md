@@ -8,12 +8,12 @@ conda env create -f environment.yml
 conda env update
 </code></pre>
 
-2. Download and make the data set (the file can be found in src folder)
+2. Download and make the data set (the file can be found in src/data folder)
 <pre><code>
 python make_dataset
 </code></pre>
 
-3. Preprocess the data set (the file can be found in src folder)
+3. Preprocess the data set (the file can be found in src/features folder)
 <pre><code>
 python build_features
 </code></pre>
@@ -36,8 +36,11 @@ After running the command the folder structure should look like the following:
 │   └── raw            <- The original, immutable data dump. (contain the raw unzipped xml files)
 │
 ├── scr
-│   ├── build_features
-│   ├── make_dataset
+│   ├── data 
+│   │    ├──build_features
+│   │
+│   ├── features
+│   │    ├── make_dataset
 │
 ├── setup.py
 ├── Enviroment.yml
