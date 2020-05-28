@@ -42,6 +42,9 @@ After running the command the folder structure should look like the following:
 │   ├── features
 │   │    ├── make_dataset
 │
+├── Notebook
+│   ├── project.ipynb
+│
 ├── setup.py
 ├── Enviroment.yml
 ├── stopord.txt
