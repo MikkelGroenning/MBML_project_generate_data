@@ -41,5 +41,5 @@ After running the command the folder structure should look like the following:
 │
 ├── setup.py
 ├── Enviroment.yml
-├── stop
+├── stopord.txt
 </code></pre>
