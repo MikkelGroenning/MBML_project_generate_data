@@ -42,7 +42,7 @@ After running the command the folder structure should look like the following:
 │   ├── features
 │   │    ├── build_features 
 │
-├── Notebook
+├── notebook
 │   ├── project.ipynb
 │
 ├── setup.py
